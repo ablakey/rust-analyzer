@@ -71,8 +71,6 @@ class HintsUpdater {
     }
 
     async setEnabled(enabled: boolean): Promise<void> {
-        console.log({ enabled, prev: this.enabled });
-
         if (this.enabled == enabled) return;
         this.enabled = enabled;
 
